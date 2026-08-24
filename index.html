@@ -5,39 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trần Thị Thanh Thùy | Portfolio</title>
     <meta name="description" content="Portfolio của Trần Thị Thanh Thùy - Admin Fanpage, Content Creator, Social Media, Photographer.">
-    
-    <!-- Google Fonts -->
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Great Vibes cho chữ ký nghệ thuật, Playfair cho Editorial Heading, Inter cho Body text -->
+
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 
     <style>
-        /* ================= CSS VARIABLES ================= */
+
         :root {
-            /* Colors based on a creative/elegant aesthetic */
-            --primary: #941B3B; /* Burgundy / Deep Red-Pink */
+
+            --primary: #941B3B;
             --primary-light: #C85A75;
-            --bg-color: #FDFBFB; /* Off-white */
-            --bg-alt: #F4ECEE; /* Soft blush gray */
+            --bg-color: #FDFBFB;
+            --bg-alt: #F4ECEE;
             --text-main: #2A2A2A;
             --text-light: #555555;
             --white: #FFFFFF;
-            
-            /* Typography */
+
+
             --font-script: 'Great Vibes', cursive;
             --font-heading: 'Playfair Display', serif;
             --font-body: 'Inter', sans-serif;
-            
-            /* Spacing */
+
+
             --section-padding: 100px 0;
             --container-width: 1200px;
-            
-            /* Animation */
+
+
             --transition: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
         }
 
-        /* ================= RESET & BASE ================= */
+
         * {
             margin: 0;
             padding: 0;
@@ -72,7 +72,7 @@
             object-fit: cover;
         }
 
-        /* Container */
+
         .container {
             width: 90%;
             max-width: var(--container-width);
@@ -97,7 +97,7 @@
             letter-spacing: 1px;
         }
 
-        /* ================= IMAGE PLACEHOLDERS ================= */
+
         .img-placeholder {
             background-color: #e0d7d9;
             display: flex;
@@ -122,11 +122,11 @@
             background-size: 20px 20px;
         }
 
-        /* ================= EASY IMAGE SLOTS ================= */
-        /*
-         * Ảnh của toàn bộ website được quản lý trong IMAGE_CONFIG ở cuối file.
-         * Chỉ cần thay thuộc tính src trong IMAGE_CONFIG, không cần sửa HTML/CSS.
-         */
+
+
+
+
+
         .image-slot {
             position: relative;
             overflow: hidden;
@@ -162,7 +162,7 @@
             opacity: 0.72;
         }
 
-        /* ================= NAVIGATION ================= */
+
         nav {
             position: fixed;
             top: 0;
@@ -227,7 +227,7 @@
             color: var(--text-main);
         }
 
-        /* ================= HERO SECTION ================= */
+
         .hero {
             min-height: 100vh;
             display: flex;
@@ -271,7 +271,7 @@
             margin-right: 15px;
             position: relative;
         }
-        
+
         .role-tag:not(:last-child)::after {
             content: '•';
             position: absolute;
@@ -315,7 +315,7 @@
             60% { transform: translateY(-7px) translateX(-50%); }
         }
 
-        /* ================= ABOUT SECTION ================= */
+
         .about {
             padding: var(--section-padding);
             background-color: var(--bg-alt);
@@ -352,7 +352,7 @@
             text-align: justify;
         }
 
-        /* ================= EXPERIENCE & EDUCATION ================= */
+
         .resume {
             padding: var(--section-padding);
         }
@@ -410,7 +410,7 @@
             left: 0;
             color: var(--primary);
         }
-        
+
         .edu-image {
             margin-top: 20px;
             width: 100%;
@@ -419,7 +419,7 @@
             border-radius: 10px;
         }
 
-        /* ================= SKILLS ================= */
+
         .skills {
             padding: var(--section-padding);
             background-color: var(--bg-alt);
@@ -464,7 +464,7 @@
             color: var(--text-light);
         }
 
-        /* ================= PORTFOLIO ================= */
+
         .portfolio {
             padding: var(--section-padding);
         }
@@ -526,7 +526,7 @@
             text-underline-offset: 5px;
         }
 
-        /* ================= WHY ME ================= */
+
         .why-me {
             padding: var(--section-padding);
             background: var(--primary);
@@ -566,7 +566,7 @@
             margin-bottom: 1rem;
         }
 
-        /* ================= FOOTER / CONTACT ================= */
+
         .contact {
             padding: var(--section-padding);
             text-align: center;
@@ -619,7 +619,7 @@
             transform: translateY(-3px);
         }
 
-        /* ================= MODAL ================= */
+
         .modal {
             position: fixed;
             top: 0; left: 0; width: 100%; height: 100%;
@@ -666,11 +666,11 @@
             color: var(--text-main);
             z-index: 10;
         }
-        
+
         .modal-body {
             padding: 3rem;
         }
-        
+
         .modal-img-placeholder {
             width: 100%;
             aspect-ratio: 16 / 9;
@@ -680,7 +680,7 @@
             border-radius: 10px;
         }
 
-        /* Gallery thumbnail bên dưới ảnh chính trong Project Modal */
+
         .project-gallery {
             display: flex;
             gap: 0.75rem;
@@ -733,20 +733,20 @@
             border-radius: 10px;
             margin: 2rem 0;
         }
-        
+
         .stat-item h4 {
             font-size: 0.8rem;
             text-transform: uppercase;
             color: var(--text-light);
         }
-        
+
         .stat-item p {
             font-family: var(--font-heading);
             font-size: 1.5rem;
             color: var(--primary);
         }
 
-        /* ================= ANIMATIONS (FADE UP) ================= */
+
         .reveal {
             opacity: 0;
             transform: translateY(40px);
@@ -758,8 +758,8 @@
             transform: translateY(0);
         }
 
-        /* ================= RESPONSIVE ================= */
-        /* Tablet: giữ ảnh đúng tỷ lệ, không kéo full-width quá mức */
+
+
         @media (min-width: 769px) and (max-width: 992px) {
             .hero-grid, .about-grid, .resume-grid {
                 grid-template-columns: 1fr;
@@ -866,7 +866,7 @@
             }
         }
 
-        /* Desktop lớn: tránh ảnh bị nở theo màn hình */
+
         @media (min-width: 1200px) {
             .hero-grid {
                 grid-template-columns: minmax(0, 1fr) minmax(420px, 500px);
@@ -881,12 +881,12 @@
                 grid-template-columns: minmax(360px, 460px) minmax(0, 1fr);
             }
         }
-    
 
-        /* ============================================================
-           V12 — CINEMATIC EDITORIAL REDESIGN
-           Giữ nguyên IMAGE_CONFIG / projectData / gallery / cursor
-           ============================================================ */
+
+
+
+
+
         :root {
             --primary: #f45b7a;
             --primary-light: #ff9aad;
@@ -984,7 +984,7 @@
             margin-bottom: 1.1rem;
         }
 
-        /* ---------- Navigation ---------- */
+
         nav {
             top: 16px;
             width: min(94%, 1180px);
@@ -1037,7 +1037,7 @@
 
         .hamburger { color: white; }
 
-        /* ---------- Hero ---------- */
+
         .hero {
             min-height: 100svh;
             padding: 150px 0 100px;
@@ -1213,7 +1213,7 @@
             100% { transform: scaleY(0); transform-origin: bottom; opacity: 0; }
         }
 
-        /* ---------- Sections ---------- */
+
         .about,
         .resume,
         .skills,
@@ -1569,7 +1569,7 @@
             line-height: 1.75;
         }
 
-        /* ---------- Contact ---------- */
+
         .contact {
             min-height: 66vh;
             display: flex;
@@ -1640,7 +1640,7 @@
             box-shadow: 0 0 28px rgba(244,91,122,.22);
         }
 
-        /* ---------- Modal / gallery ---------- */
+
         .modal {
             background: rgba(5, 3, 4, .82);
             backdrop-filter: blur(14px);
@@ -1745,7 +1745,7 @@
         .modal-body li { color: var(--text-light); }
         .modal-body strong { color: #fff; }
 
-        /* ---------- Motion ---------- */
+
         .reveal {
             opacity: 0;
             transform: translateY(54px) scale(.985);
@@ -1821,7 +1821,7 @@
             box-shadow: 0 0 16px rgba(244,91,122,.4);
         }
 
-        /* ---------- Responsive ---------- */
+
         @media (max-width: 1100px) {
             .hero-grid {
                 grid-template-columns: 1fr 390px;
@@ -1962,14 +1962,14 @@
             .motion-item { opacity: 1 !important; transform: none !important; filter: none !important; }
         }
 
-    
 
-        /* ============================================================
-           V13 — CINEMATIC MOTION SYSTEM
-           Motion choreography theo section, không chỉ fade-up.
-           ============================================================ */
 
-        /* ---------- Page / Navigation entrance ---------- */
+
+
+
+
+
+
         body {
             opacity: 0;
             transition: opacity .55s ease;
@@ -2032,7 +2032,7 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
-        /* ---------- Ambient cinematic particles ---------- */
+
         .ambient-motion-layer {
             position: fixed;
             inset: 0;
@@ -2061,7 +2061,7 @@
             100% { opacity: 0; transform: translate3d(var(--mote-x, 45px), -115vh, 0) scale(1.25); }
         }
 
-        /* ---------- Hero choreography ---------- */
+
         .hero-name.motion-split-ready {
             display: flex;
             flex-wrap: wrap;
@@ -2161,7 +2161,7 @@
             50% { transform: translateX(-50%) translateY(8px); opacity: 1; }
         }
 
-        /* ---------- Section title wipe ---------- */
+
         section.motion-section .section-title,
         section.motion-section .section-subtitle,
         footer.motion-section .section-subtitle,
@@ -2188,7 +2188,7 @@
             100% { clip-path: inset(0 0 0 0); opacity: 1; transform: translateY(0); }
         }
 
-        /* ---------- About ---------- */
+
         .about-img {
             clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
         }
@@ -2230,7 +2230,7 @@
 
         @keyframes lineDraw { to { transform: scaleX(1); } }
 
-        /* ---------- Timeline: line draws + cards alternate ---------- */
+
         .timeline {
             position: relative;
         }
@@ -2273,7 +2273,7 @@
             box-shadow: 0 0 0 7px rgba(200,90,117,.12), 0 0 20px rgba(200,90,117,.4);
         }
 
-        /* ---------- Skills ---------- */
+
         .skill-icon {
             display: inline-block;
             animation: iconHoverFloat 3.6s ease-in-out infinite;
@@ -2300,7 +2300,7 @@
             to { clip-path: inset(0 0 0 0 round 24px); opacity: 1; transform: translateY(0) scale(1); }
         }
 
-        /* ---------- Project cards: cinematic curtain ---------- */
+
         .project-card.motion-item {
             opacity: 1;
             clip-path: inset(0 100% 0 0 round 26px);
@@ -2334,7 +2334,7 @@
         }
         .project-card:hover .project-info { transform: translateY(-6px); }
 
-        /* ---------- Why me ---------- */
+
         .why-num {
             display: inline-block;
             transition: transform .7s var(--ease-spring), text-shadow .7s ease;
@@ -2355,7 +2355,7 @@
             100% { opacity: 1; transform: translateY(0) scale(1) rotateX(0); }
         }
 
-        /* ---------- Contact ---------- */
+
         .contact-name {
             background: linear-gradient(90deg, #fff 0%, #f3b5c4 35%, #fff 55%, #d9718d 75%, #fff 100%);
             background-size: 250% auto;
@@ -2391,7 +2391,7 @@
             100% { opacity: 0; transform: scale(1.35); }
         }
 
-        /* ---------- Modal cinematic entrance ---------- */
+
         .modal.active .modal-content {
             animation: modalCinematicIn .72s var(--ease-out) both;
         }
@@ -2444,13 +2444,13 @@
             100% { opacity: 1; transform: scale(1); filter: blur(0); }
         }
 
-        /* ---------- Magnetic elements ---------- */
+
         .magnetic-ready {
             transition: translate .22s ease, transform .35s var(--ease-out);
             will-change: translate;
         }
 
-        /* ---------- Section ambient glow enters ---------- */
+
         section.motion-section,
         footer.motion-section {
             position: relative;
@@ -2519,9 +2519,9 @@
     </style>
 
 
-    <!-- V14 FIXES: centered navbar, reliable My Work, unified responsive -->
+
     <style id="v14-critical-fixes">
-        /* ===== 1. NAVBAR: links are geometrically centered ===== */
+
         @media (min-width: 981px) {
             #navbar .nav-container {
                 display: grid !important;
@@ -2563,7 +2563,7 @@
             }
         }
 
-        /* ===== 2. MY WORK: never remains hidden if an observer misses ===== */
+
         #portfolio .section-subtitle,
         #portfolio .section-title {
             clip-path: none !important;
@@ -2589,7 +2589,7 @@
             to   { opacity: 1; transform: translateY(0); }
         }
 
-        /* Keep image/layout calculations stable across all screens */
+
         html, body { width: 100%; max-width: 100%; overflow-x: clip; }
         .container { width: min(92%, 1180px) !important; min-width: 0; }
         .hero-grid, .about-grid, .resume-grid,
@@ -2597,9 +2597,9 @@
         .hero-content, .about-content, .experience-col, .education-col,
         .skill-card, .project-card, .why-item { min-width: 0; }
 
-        /* ===== 3. RESPONSIVE: one final source of truth ===== */
 
-        /* Laptop / compact desktop */
+
+
         @media (min-width: 981px) and (max-width: 1199px) {
             :root { --section-padding: 94px 0; }
 
@@ -2627,7 +2627,7 @@
             .project-card { min-height: 470px !important; }
         }
 
-        /* Tablet: navigation becomes hamburger before it gets cramped */
+
         @media (max-width: 980px) {
             #navbar {
                 top: 10px !important;
@@ -2735,7 +2735,7 @@
             .modal-body { padding: clamp(1.4rem, 4vw, 2.4rem) !important; }
         }
 
-        /* Mobile */
+
         @media (max-width: 768px) {
             :root { --section-padding: 76px 0; }
             .container { width: min(92%, 680px) !important; }
@@ -2800,7 +2800,7 @@
             .project-gallery-thumb { flex-basis: 78px !important; width: 78px !important; }
         }
 
-        /* Small phones */
+
         @media (max-width: 480px) {
             #navbar { width: calc(100% - 16px) !important; padding: .68rem .78rem !important; }
             #navbar .nav-links { left: 8px !important; width: calc(100vw - 16px) !important; }
@@ -2828,11 +2828,11 @@
 
 
     <style>
-        /* ============================================================
-           V16 — ONLY FIX: WHY WORK WITH ME CARDS
-           Keep number, title and body in separate layout rows so they
-           can never overlap each other.
-           ============================================================ */
+
+
+
+
+
         .why-me .why-item {
             display: grid !important;
             grid-template-columns: minmax(0, 1fr) auto !important;
@@ -2893,7 +2893,7 @@
 
 
     <style id="v17-gallery-thumbnail-visibility-fix">
-        /* V17 — ONLY FIX: Project gallery thumbnails always stay visible */
+
         .modal.active .project-gallery-thumb {
             opacity: .72 !important;
             visibility: visible !important;
@@ -2907,7 +2907,7 @@
     </style>
 
     <style id="v18-gallery-no-flash-fix">
-        /* V18 — ONLY FIX: đổi thumbnail không flash/blur/zoom ảnh lớn */
+
         .project-main-image.is-gallery-switch img {
             animation: none !important;
             opacity: 1 !important;
@@ -2919,7 +2919,7 @@
 </head>
 <body>
 
-    <!-- NAVIGATION -->
+
     <nav id="navbar">
         <div class="container nav-container">
             <a href="#hero" class="logo">ThanhThuy</a>
@@ -2935,7 +2935,7 @@
         </div>
     </nav>
 
-    <!-- HERO SECTION -->
+
     <header id="hero" class="hero">
         <div class="container hero-grid">
             <div class="hero-content reveal">
@@ -2958,7 +2958,7 @@
         <div class="scroll-down">Scroll</div>
     </header>
 
-    <!-- ABOUT SECTION -->
+
     <section id="about" class="about">
         <div class="container about-grid">
             <div class="about-img image-slot reveal" data-image-key="profile" data-image-label="Ảnh giới thiệu"></div>
@@ -2966,7 +2966,7 @@
                 <h2 class="section-subtitle">Giới thiệu bản thân</h2>
                 <div class="about-quote">"Crafting eye-catching visuals."</div>
                 <p class="about-text">
-                    Xin chào! Tôi là sinh viên vừa tốt nghiệp chuyên ngành Marketing và luôn tâm niệm rằng: "Nếu yêu thích công việc, bạn sẽ làm được". Tôi luôn làm việc với niềm đam mê và sự tận tâm. 
+                    Xin chào! Tôi là sinh viên vừa tốt nghiệp chuyên ngành Marketing và luôn tâm niệm rằng: "Nếu yêu thích công việc, bạn sẽ làm được". Tôi luôn làm việc với niềm đam mê và sự tận tâm.
                 </p>
                 <p class="about-text">
                     Với trọng tâm là sự sáng tạo và tính độc đáo, tôi mong muốn tạo ra những nội dung ấn tượng, có khả năng kết nối sâu sắc với khán giả. Tôi luôn không ngừng học hỏi để phát triển chuyên môn và rất hào hứng được chia sẻ hành trình này cùng bạn thông qua các sản phẩm của mình!
@@ -2975,14 +2975,14 @@
         </div>
     </section>
 
-    <!-- EXPERIENCE & EDUCATION -->
+
     <section id="experience" class="resume">
         <div class="container resume-grid">
-            
+
             <div class="experience-col reveal">
                 <h2 class="section-title">Kinh nghiệm</h2>
                 <div class="timeline">
-                    <!-- Job 1 -->
+
                     <div class="timeline-item">
                         <h3 class="tl-title">Designer - Content - Admin Fanpage</h3>
                         <div class="tl-subtitle">Quản lý Fanpage & Sáng tạo nội dung</div>
@@ -2992,7 +2992,7 @@
                             <li>Kiểm duyệt nội dung, bảo vệ cộng đồng an toàn.</li>
                         </ul>
                     </div>
-                    <!-- Job 2 -->
+
                     <div class="timeline-item">
                         <h3 class="tl-title">Thực tập sinh SEO</h3>
                         <div class="tl-subtitle">Search Engine Optimization</div>
@@ -3020,25 +3020,25 @@
         </div>
     </section>
 
-    <!-- SKILLS SECTION -->
+
     <section id="skills" class="skills">
         <div class="container">
             <h2 class="section-subtitle">Kỹ năng chuyên môn</h2>
             <h3 class="section-title">Điều tôi làm tốt nhất</h3>
-            
+
             <div class="skills-grid">
                 <div class="skill-card reveal">
                     <div class="skill-icon">🎬</div>
                     <h4 class="skill-title">Video Editor</h4>
                     <p class="skill-desc">Có khả năng quay video và sử dụng thành thạo ứng dụng CapCut để biên tập các tư liệu thô thành video hoàn chỉnh (Short-form & Long-form video).</p>
                 </div>
-                
+
                 <div class="skill-card reveal" style="transition-delay: 0.1s;">
                     <div class="skill-icon">📸</div>
                     <h4 class="skill-title">Photographer</h4>
                     <p class="skill-desc">Sử dụng thành thạo máy ảnh kỹ thuật số (Canon & Nikon) để chụp ảnh cá nhân, sự kiện. Hậu kỳ màu sắc bằng file RAW và JPEG qua Lightroom, Photoshop, Canva.</p>
                 </div>
-                
+
                 <div class="skill-card reveal" style="transition-delay: 0.2s;">
                     <div class="skill-icon">📱</div>
                     <h4 class="skill-title">Admin Fanpage & Content writer</h4>
@@ -3048,15 +3048,15 @@
         </div>
     </section>
 
-    <!-- PORTFOLIO SECTION -->
+
     <section id="portfolio" class="portfolio">
         <div class="container">
             <h2 class="section-subtitle">Dự án nổi bật</h2>
             <h3 class="section-title">My Work</h3>
-            
+
             <div class="portfolio-grid mt-4">
-                
-                <!-- Project 1 -->
+
+
                 <div class="project-card reveal" onclick="openModal('project1')">
                     <div class="project-img image-slot" data-image-key="project1Cover" data-image-label="Ảnh bìa dự án Fanpage"></div>
                     <div class="project-info">
@@ -3066,7 +3066,7 @@
                     </div>
                 </div>
 
-                <!-- Project 2 -->
+
                 <div class="project-card reveal" style="transition-delay: 0.1s;" onclick="openModal('project2')">
                     <div class="project-img image-slot" data-image-key="project2Cover" data-image-label="Ảnh bìa Photography"></div>
                     <div class="project-info">
@@ -3076,7 +3076,7 @@
                     </div>
                 </div>
 
-                <!-- Project 3 -->
+
                 <div class="project-card reveal" style="transition-delay: 0.2s;" onclick="openModal('project3')">
                     <div class="project-img image-slot" data-image-key="project3Cover" data-image-label="Ảnh bìa Video"></div>
                     <div class="project-info">
@@ -3090,12 +3090,12 @@
         </div>
     </section>
 
-    <!-- WHY WORK WITH ME -->
+
     <section id="why-me" class="why-me">
         <div class="container">
             <h2 class="section-subtitle">Lợi thế cạnh tranh</h2>
             <h3 class="section-title">Why Work With Me?</h3>
-            
+
             <div class="why-grid">
                 <div class="why-item reveal">
                     <div class="why-num">01</div>
@@ -3116,12 +3116,12 @@
         </div>
     </section>
 
-    <!-- FOOTER / CONTACT -->
+
     <footer id="contact" class="contact">
         <div class="container reveal">
             <h2 class="section-subtitle">Let's Connect</h2>
             <div class="contact-name">Trần Thị Thanh Thùy</div>
-            
+
             <div class="contact-info">
                 <div class="contact-item">📞 0382 087 649</div>
                 <div class="contact-item">✉️ tranthithanhthuy452004@gmail.com</div>
@@ -3136,28 +3136,28 @@
         </div>
     </footer>
 
-    <!-- MODAL COMPONENT -->
+
     <div id="projectModal" class="modal">
         <div class="modal-content">
             <button class="modal-close" onclick="closeModal()">×</button>
             <div class="modal-body" id="modal-content-inject">
-                <!-- Content injected via JS -->
+
             </div>
         </div>
     </div>
 
-    <!-- JAVASCRIPT -->
+
     <script>
-        /* ============================================================
-           THAY ẢNH TẠI ĐÂY — CHỈ CẦN ĐỔI `src`
-           ------------------------------------------------------------
-           - Dán URL Cloudinary / URL ảnh online vào src: "..."
-           - Nếu muốn dùng ảnh local, ví dụ: src: "./images/avatar.webp"
-           - position dùng để chỉnh vùng crop, ví dụ: "center top", "50% 30%"
-           - Để src: "" nếu chưa có ảnh, website sẽ hiện tên vị trí ảnh.
-           - Ảnh gallery của từng project cũng nằm ngay trong IMAGE_CONFIG.
-           - projectData KHÔNG chứa URL ảnh, chỉ tham chiếu galleryKey.
-           ============================================================ */
+
+
+
+
+
+
+
+
+
+
         const IMAGE_CONFIG = {
             hero: {
                 src: "https://res.cloudinary.com/jb5fuwua/image/upload/v1787570501/T%E1%BB%91t_Nghi%E1%BB%87p-11-Photoroom.png",
@@ -3184,9 +3184,9 @@
                 position: "center center"
             },
 
-            // ================= PROJECT GALLERIES =================
-            // Toàn bộ ảnh gallery cũng được quản lý tại IMAGE_CONFIG.
-            // Muốn thêm/bớt ảnh chỉ cần sửa các mảng bên dưới.
+
+
+
             project1Gallery: [
                 { src: "https://res.cloudinary.com/jb5fuwua/image/upload/v1787581585/%E1%BA%A2nh_ch%E1%BB%A5p_m%C3%A0n_h%C3%ACnh_2026-08-24_212608.png", label: "Ảnh Fanpage 01", position: "center center" },
                 { src: "https://res.cloudinary.com/jb5fuwua/image/upload/v1787583006/%E1%BA%A2nh_ch%E1%BB%A5p_m%C3%A0n_h%C3%ACnh_2026-08-24_214942.png", label: "Ảnh Fanpage 02", position: "center center" },
@@ -3242,7 +3242,7 @@
             root.querySelectorAll("[data-image-key]").forEach(renderImageSlot);
         }
 
-        // Data cho Modal Project
+
         const projectData = {
             project1: {
                 title: "TNTT Giáo Xứ Thánh Gia",
@@ -3313,7 +3313,7 @@
             }
         };
 
-        // Modal Logic
+
         const modal = document.getElementById('projectModal');
         const modalContent = document.getElementById('modal-content-inject');
 
@@ -3326,8 +3326,8 @@
             img.style.objectPosition = image.position || "center center";
 
             const commitImage = () => {
-                // Ảnh mặc định lúc mở modal vẫn giữ entrance animation.
-                // Khi click thumbnail thì thay ảnh trực tiếp, không blur/zoom/flash.
+
+
                 mainSlot.classList.toggle("is-gallery-switch", Boolean(thumb));
                 mainSlot.classList.remove("gallery-image-switching");
                 mainSlot.innerHTML = "";
@@ -3340,7 +3340,7 @@
                 mainSlot.innerHTML = `<span class="image-slot-label">Không tải được ảnh — kiểm tra URL trong IMAGE_CONFIG.${mainSlot.dataset.galleryKey || "gallery"}</span>`;
             }, { once: true });
 
-            // Giữ ảnh hiện tại cho tới khi ảnh mới load xong để tránh chớp trắng.
+
             img.addEventListener("load", commitImage, { once: true });
             img.src = image.src;
             if (img.complete && img.naturalWidth > 0) commitImage();
@@ -3357,8 +3357,8 @@
             const gallery = modalContent.querySelector(".project-gallery");
             if (!mainSlot || !gallery) return;
 
-            // Ảnh lớn và toàn bộ thumbnail đều lấy từ CÙNG MỘT gallery trong IMAGE_CONFIG.
-            // Ảnh đầu tiên của gallery luôn là ảnh lớn mặc định và vẫn xuất hiện trong danh sách thumbnail.
+
+
             const galleryConfig = IMAGE_CONFIG[data.galleryKey];
             const galleryImages = Array.isArray(galleryConfig)
                 ? galleryConfig.filter(image => image && image.src)
@@ -3371,10 +3371,10 @@
                 return;
             }
 
-            // Gallery[0] = ảnh lớn mặc định.
+
             setProjectMainImage(mainSlot, galleryImages[0]);
 
-            // Tất cả ảnh, kể cả gallery[0], đều xuất hiện bên dưới.
+
             galleryImages.forEach((image, index) => {
                 const button = document.createElement("button");
                 button.type = "button";
@@ -3395,7 +3395,7 @@
                 });
                 gallery.appendChild(button);
 
-                // Thumbnail đầu tiên tương ứng với ảnh lớn mặc định.
+
                 if (index === 0) {
                     button.classList.add("active");
                 }
@@ -3417,9 +3417,9 @@
             `;
 
             renderProjectGallery(data);
-            
+
             modal.classList.add('active');
-            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+            document.body.style.overflow = 'hidden';
         }
 
         function closeModal() {
@@ -3427,7 +3427,7 @@
             document.body.style.overflow = 'auto';
         }
 
-        // Đóng modal khi bấm ra ngoài hoặc nhấn ESC
+
         window.addEventListener('click', (e) => {
             if (e.target === modal) {
                 closeModal();
@@ -3440,10 +3440,10 @@
             }
         });
 
-        // Render tất cả ảnh tĩnh trên trang từ IMAGE_CONFIG
+
         applyConfiguredImages();
 
-        // Hamburger Menu Mobile
+
         const hamburger = document.querySelector('.hamburger');
         const navLinks = document.querySelector('.nav-links');
         const links = document.querySelectorAll('.nav-link');
@@ -3460,7 +3460,7 @@
             });
         });
 
-        // Intersection Observer for Fade-Up Animations
+
         const observerOptions = {
             threshold: 0.15,
             rootMargin: "0px 0px -50px 0px"
@@ -3479,7 +3479,7 @@
             observer.observe(el);
         });
 
-        // Active Navigation Link on Scroll
+
         const sections = document.querySelectorAll('section, header, footer');
         window.addEventListener('scroll', () => {
             let current = '';
@@ -3501,26 +3501,26 @@
     </script>
 
 
-    <!-- V12 interaction & motion layer -->
+
     <script>
         (() => {
             const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
             const finePointer = window.matchMedia('(pointer: fine)').matches;
             const nav = document.getElementById('navbar');
 
-            // Scroll progress
+
             const progress = document.createElement('div');
             progress.className = 'scroll-progress';
             progress.innerHTML = '<div class="scroll-progress__bar"></div>';
             document.body.appendChild(progress);
             const progressBar = progress.firstElementChild;
 
-            // Stagger existing reveal elements without changing markup/data.
+
             document.querySelectorAll('.reveal').forEach((el, index) => {
                 el.style.setProperty('--reveal-delay', `${Math.min((index % 4) * 85, 255)}ms`);
             });
 
-            // Animate elements that were not part of the original reveal system.
+
             const motionItems = document.querySelectorAll('.timeline-item, .project-card, .why-item, .contact-item, .social-link');
             motionItems.forEach((el, index) => {
                 el.classList.add('motion-item');
@@ -3571,7 +3571,7 @@
             }, { passive: true });
             updateScrollEffects();
 
-            // Pointer glow + subtle 3D tilt (desktop only).
+
             if (finePointer && !reduceMotion) {
                 document.querySelectorAll('.skill-card, .project-card, .why-item').forEach(card => {
                     card.addEventListener('pointermove', (event) => {
@@ -3592,7 +3592,7 @@
                 });
             }
 
-            // Add a tiny cinematic page-entry class once fonts/assets have started painting.
+
             requestAnimationFrame(() => document.documentElement.classList.add('page-ready'));
         })();
     </script>
@@ -3603,7 +3603,7 @@
             const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
             const finePointer = window.matchMedia('(pointer: fine)').matches;
 
-            /* Split hero name by characters while preserving readable aria-label. */
+
             const heroName = document.querySelector('.hero-name');
             if (heroName && !heroName.classList.contains('motion-split-ready')) {
                 const label = heroName.textContent.trim();
@@ -3627,7 +3627,7 @@
                 heroName.classList.add('motion-split-ready');
             }
 
-            /* Cinematic floating motes. */
+
             if (!reduceMotion) {
                 const layer = document.createElement('div');
                 layer.className = 'ambient-motion-layer';
@@ -3647,7 +3647,7 @@
                 document.body.prepend(layer);
             }
 
-            /* Per-section choreography. */
+
             const sections = [...document.querySelectorAll('section, footer')];
             sections.forEach(section => section.classList.add('motion-section'));
 
@@ -3664,7 +3664,7 @@
                 sections.forEach(section => section.classList.add('section-in'));
             }
 
-            /* Magnetic nav/social interactions. */
+
             if (finePointer && !reduceMotion) {
                 const magnetic = document.querySelectorAll('.nav-links a, .social-link, .project-link, .modal-close');
                 magnetic.forEach(el => {
@@ -3681,7 +3681,7 @@
                 });
             }
 
-            /* Mouse-driven ambient parallax on hero background and image. */
+
             const hero = document.querySelector('.hero');
             const heroImage = document.querySelector('.hero-image');
             if (hero && heroImage && finePointer && !reduceMotion) {
@@ -3701,7 +3701,7 @@
                 });
             }
 
-            /* Re-run modal thumbnail animation each time modal opens. */
+
             const projectModal = document.getElementById('projectModal');
             if (projectModal) {
                 const modalObserver = new MutationObserver(() => {
@@ -3715,16 +3715,16 @@
         })();
     </script>
 
-    <!-- Snowflake Particles Cursor: giữ nguyên thông số gốc, chỉ đổi icon -->
+
     <script>
-        /* ============================================================
-           CURSOR_CONFIG — CHỈNH CURSOR Ở ĐÂY
-           ------------------------------------------------------------
-           Chỉ thay 2 thông số so với Snowflake Cursor gốc:
-           - size: kích thước icon (gốc 12px)
-           - speed: hệ số tốc độ (1 = tốc độ gốc)
-           Các thông số còn lại giữ nguyên.
-           ============================================================ */
+
+
+
+
+
+
+
+
         const CURSOR_CONFIG = {
             icons: ["🌸"],
             size: 18,
@@ -3881,8 +3881,8 @@
             }
 
             function Particle(x, y, canvasItem) {
-                // Giữ nguyên lifespan / hướng / xoay của Snowflake Cursor gốc.
-                // Chỉ nhân chuyển động với CURSOR_CONFIG.speed để rơi chậm hơn.
+
+
                 const speed = Number(CURSOR_CONFIG.speed) || 0.65;
                 const lifeSpan = Math.floor(Math.random() * 60 + 80);
                 this.initialLifeSpan = lifeSpan;
@@ -3929,7 +3929,7 @@
     </script>
 
 
-    <!-- V14 visibility safety: portfolio can never remain in a pre-animation hidden state -->
+
     <script id="v14-portfolio-safety">
         (() => {
             const portfolio = document.getElementById('portfolio');
